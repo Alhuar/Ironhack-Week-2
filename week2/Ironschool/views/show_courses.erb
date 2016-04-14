@@ -1,0 +1,12 @@
+<h1>Hi <%= @name %>. Welcome to Ironhack.</h1>
+<p>As you´ve submited your info, these are our available courses for your level:</p>
+<ul>
+	<% @your_courses.each do |course|%>
+	<li><%= course[:name] %></li>
+	<% end %>
+</ul>
+
+
+<form action="/reset" method="POST">
+<button type="submit">Log out</button>
+</form>

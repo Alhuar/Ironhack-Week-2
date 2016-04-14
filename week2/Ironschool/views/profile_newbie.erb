@@ -1,0 +1,11 @@
+<h1>Hi <%= @name %>. Welcome to Ironhack.</h1>
+<p>As you have no experience, these are our suitable courses for you.</p>
+<ul>
+<% @@newbie_courses.each do |course| %>
+<li><%= course%></li>
+<%end%>
+</ul>
+
+<form action="/reset" method="POST">
+<button type="submit">Log out</button>
+</form>
