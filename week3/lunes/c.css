@@ -1,0 +1,18 @@
+.box-set:after, .box-set:before {
+	content: "";
+	display: table;
+
+}
+
+.box-set:after {
+	clear:both;
+}
+
+.box {
+	background: #2db34a;
+	text-align: center;
+	margin: 1.85px;
+	width: 30%;
+	height: 100px;
+	float: right;
+}
